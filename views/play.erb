@@ -1,0 +1,17 @@
+<%= @name  %>
+
+<form method="post" action="/play">
+  <input type="submit" name="weapon" value="Rock" />
+  <input type="submit" name="weapon" value="Paper" />
+  <input type="submit" name="weapon" value="Scissors" />
+</form>
+
+Rock
+Paper
+Scissors
+
+You have selected <%= @weapon %>!
+
+<div id="computer">
+  Computer has selected <%= @comp_weapon.to_s.capitalize %>!
+</div>
